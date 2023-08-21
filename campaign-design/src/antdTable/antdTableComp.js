@@ -34,7 +34,6 @@ import {
   DotDiv,
 } from "../styledComponents/styles";
 
-
 const columns = [
   {
     title: (
@@ -159,7 +158,11 @@ const data = [
     ),
     tags: ["Active"],
     date: <Date>Oct 25,2020</Date>,
-    action: <DotDiv><HeaderDot /></DotDiv>,
+    action: (
+      <DotDiv>
+        <HeaderDot />
+      </DotDiv>
+    ),
   },
   {
     key: "2",
@@ -204,7 +207,11 @@ const data = [
     ),
     tags: ["Active"],
     date: <Date>Sep 20,2021</Date>,
-    action: <DotDiv><HeaderDot /></DotDiv>,
+    action: (
+      <DotDiv>
+        <HeaderDot />
+      </DotDiv>
+    ),
   },
   {
     key: "3",
@@ -249,7 +256,11 @@ const data = [
     ),
     tags: ["Active"],
     date: <Date>Jan 1,2022</Date>,
-    action: <DotDiv><HeaderDot /></DotDiv>,
+    action: (
+      <DotDiv>
+        <HeaderDot />
+      </DotDiv>
+    ),
   },
   {
     key: "4",
@@ -269,7 +280,11 @@ const data = [
     address: <NoSurvey>No Survey</NoSurvey>,
     tags: ["Active"],
     date: <Date>Oct 17,2000</Date>,
-    action: <DotDiv><HeaderDot /></DotDiv>,
+    action: (
+      <DotDiv>
+        <HeaderDot />
+      </DotDiv>
+    ),
   },
   {
     key: "5",
@@ -294,9 +309,12 @@ const data = [
     address: <UnderScore>-</UnderScore>,
     tags: ["Draft"],
     date: <Date>Dec 30,2030</Date>,
-    action: <DotDiv><HeaderDot /></DotDiv>,
+    action: (
+      <DotDiv>
+        <HeaderDot />
+      </DotDiv>
+    ),
   },
-  
 ];
 export const AntdTableComp = () => (
   <div style={{ padding: "0px 16px" }}>
