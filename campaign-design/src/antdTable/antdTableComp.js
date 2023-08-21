@@ -29,7 +29,11 @@ import {
   Date,
   RatingsNumber2,
   RatingsNumber3,
+  NoSurvey,
+  UnderScore,
+  DotDiv,
 } from "../styledComponents/styles";
+
 
 const columns = [
   {
@@ -63,12 +67,11 @@ const columns = [
     render: (_, { tags }) => (
       <>
         {tags.map((tag) => {
-          let color = tag.length > 5 ? 'green' : 'geekblue';
-          if (tag === 'Draft') {
-            color = 'blue';
-          }
-          else{
-            color = 'green';
+          let color = tag.length > 5 ? "green" : "geekblue";
+          if (tag === "Draft") {
+            color = "blue";
+          } else {
+            color = "green";
           }
           return (
             <StatusBtn color={color} key={tag}>
@@ -156,7 +159,7 @@ const data = [
     ),
     tags: ["Active"],
     date: <Date>Oct 25,2020</Date>,
-    action: <HeaderDot />,
+    action: <DotDiv><HeaderDot /></DotDiv>,
   },
   {
     key: "2",
@@ -201,7 +204,7 @@ const data = [
     ),
     tags: ["Active"],
     date: <Date>Sep 20,2021</Date>,
-    action: <HeaderDot />,
+    action: <DotDiv><HeaderDot /></DotDiv>,
   },
   {
     key: "3",
@@ -246,7 +249,7 @@ const data = [
     ),
     tags: ["Active"],
     date: <Date>Jan 1,2022</Date>,
-    action: <HeaderDot />,
+    action: <DotDiv><HeaderDot /></DotDiv>,
   },
   {
     key: "4",
@@ -262,11 +265,11 @@ const data = [
         </SvgsImages>
       </FirstData>
     ),
-    age: <Ratings>No Survey</Ratings>,
-    address: <AvgScore>No Survey</AvgScore>,
+    age: <NoSurvey>No Survey</NoSurvey>,
+    address: <NoSurvey>No Survey</NoSurvey>,
     tags: ["Active"],
     date: <Date>Oct 17,2000</Date>,
-    action: <HeaderDot />,
+    action: <DotDiv><HeaderDot /></DotDiv>,
   },
   {
     key: "5",
@@ -287,12 +290,13 @@ const data = [
         </SvgsImages>
       </FirstData>
     ),
-    age: <Ratings>-</Ratings>,
-    address: <AvgScore>-</AvgScore>,
+    age: <UnderScore>-</UnderScore>,
+    address: <UnderScore>-</UnderScore>,
     tags: ["Draft"],
     date: <Date>Dec 30,2030</Date>,
-    action: <HeaderDot />,
+    action: <DotDiv><HeaderDot /></DotDiv>,
   },
+  
 ];
 export const AntdTableComp = () => (
   <div style={{ padding: "0px 16px" }}>
