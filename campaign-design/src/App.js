@@ -1,9 +1,12 @@
-import './App.css';
+import "./App.css";
+import { AntdTableComp } from "./antdTable/antdTableComp";
+import { AntdTableHeader } from "./antdTable/antdTableHeader";
 
 function App() {
   return (
     <div className="App">
-      HI
+      <AntdTableHeader />
+      <AntdTableComp />
     </div>
   );
 }
