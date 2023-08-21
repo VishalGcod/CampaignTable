@@ -94,6 +94,7 @@ font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+display:flex;
 `;
 
 export const RatingsNumber2=styled.div`
@@ -117,3 +118,22 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 `;
+export const NoSurvey= styled.div`
+color: var(--grey-t-35, #8895A3);
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-left:20px;
+`;
+
+export const UnderScore= styled.div`
+color: var(--grey-t-35, #8895A3);
+margin-left:45px;
+`;
+
+export const DotDiv=styled.div`
+display:flex;
+justify-content:center;
+margin-right:25px;
+`; 
