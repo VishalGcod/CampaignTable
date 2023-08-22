@@ -154,7 +154,7 @@ const data = [
           <RatingFont>32.7%</RatingFont>
         </RatingsNumber>
         <span>
-          <Progress style={{width:'110px', height:'6px'}} percent={30} showInfo={false} />
+          <Progress style={{width:'112px', height:'6px'}} percent={30} showInfo={false} />
         </span>
       </Ratings>
     ),
@@ -200,7 +200,7 @@ const data = [
           <RatingFont>61.2%</RatingFont>
         </RatingsNumber2>
         <span>
-          <Percent2 />
+        <Progress style={{width:'112px', height:'6px'}} percent={61} showInfo={false} />
         </span>
       </Ratings>
     ),
@@ -250,7 +250,7 @@ const data = [
           <RatingFont>100.0%</RatingFont>
         </RatingsNumber3>
         <span>
-          <Percent3 />
+        <Progress style={{width:'112px', height:'6px'}} percent={100} showInfo={false} />
         </span>
       </Ratings>
     ),
