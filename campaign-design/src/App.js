@@ -10,7 +10,6 @@ function App() {
     <div className="App">
       <AntdTableHeader />
       <AntdTableComp setPercent={setPercent}/>
-      {/* <ProgressBar percent={percent}/> */}
     </div>
   );
 }

@@ -5,12 +5,6 @@ import { styled } from "styled-components";
 import { NameSort } from "../imageSvgComps/nameSort";
 import { UserSvg } from "../imageSvgComps/userSvg";
 import { FileSvg } from "../imageSvgComps/fileSvg";
-import { Percent1 } from "../imageSvgComps/percent1";
-import { Percent2 } from "../imageSvgComps/percent2";
-import { Percent3 } from "../imageSvgComps/percent3";
-import { StarRating1 } from "../imageSvgComps/starRating1";
-import { StarRating3 } from "../imageSvgComps/starRating3";
-import { StarRating2 } from "../imageSvgComps/starRating2";
 import { Progress } from "antd";
 import {
   TableHeading,
@@ -34,6 +28,7 @@ import {
   UnderScore,
   DotDiv,
 } from "../styledComponents/styles";
+
 import { StarRatings } from "../imageSvgComps/starRate";
 import { ProgressBar } from "../imageSvgComps/progressBor";
 
@@ -154,9 +149,8 @@ const data = [
           <RatingFont>32.7%</RatingFont>
         </RatingsNumber>
         <span>
-          <Progress
-            style={{ width: "112px", height: "6px" }}
-            percent={30}
+          <ProgressBar
+          percent={32}
             showInfo={false}
           />
         </span>
