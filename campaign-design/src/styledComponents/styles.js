@@ -24,6 +24,7 @@ export const SvgsImages = styled.div`
 
 export const Stars = styled.div`
   display: flex;
+  margin:auto;
 `;
 
 export const AvgScore = styled.div`

@@ -5,7 +5,7 @@ import { styled } from "styled-components";
 export const RateStyled=styled(Rate)`
 font-size:14px;
 color:#1B63A9;
-&.ant-rate .ant-rate-star-first .anticon, :where(.css-dev-only-do-not-override-17a39f8).ant-rate .ant-rate-star-second .anticon {
+&.ant-rate .ant-rate-star-second {
     margin: -3px;
     }
 }
