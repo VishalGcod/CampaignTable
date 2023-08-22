@@ -11,7 +11,7 @@ import { Percent3 } from "../imageSvgComps/percent3";
 import { StarRating1 } from "../imageSvgComps/starRating1";
 import { StarRating3 } from "../imageSvgComps/starRating3";
 import { StarRating2 } from "../imageSvgComps/starRating2";
-import {Progress} from "antd";
+import { Progress } from "antd";
 import {
   TableHeading,
   Sorting,
@@ -42,9 +42,9 @@ export const Line = styled.div`
   height: 14px;
   background: #e4e7ea;
 `;
-export const Rows=styled.div`
-height: 87px;
-flex-shrink: 0;
+export const Rows = styled.div`
+  height: 87px;
+  flex-shrink: 0;
 `;
 
 const columns = [
@@ -154,14 +154,18 @@ const data = [
           <RatingFont>32.7%</RatingFont>
         </RatingsNumber>
         <span>
-          <Progress style={{width:'112px', height:'6px'}} percent={30} showInfo={false} />
+          <Progress
+            style={{ width: "112px", height: "6px" }}
+            percent={30}
+            showInfo={false}
+          />
         </span>
       </Ratings>
     ),
     address: (
       <AvgScore>
         <Stars>
-        <StarRatings value={3.5}/>
+          <StarRatings value={3.5} />
         </Stars>
         <div>3.37</div>
       </AvgScore>
@@ -200,18 +204,18 @@ const data = [
           <RatingFont>61.2%</RatingFont>
         </RatingsNumber2>
         <span>
-        <Progress style={{width:'112px', height:'6px'}} percent={61} showInfo={false} />
+          <Progress
+            style={{ width: "112px", height: "6px" }}
+            percent={61}
+            showInfo={false}
+          />
         </span>
       </Ratings>
     ),
     address: (
       <AvgScore>
         <Stars>
-          <StarRating1 />
-          <StarRating1 />
-          <StarRating1 />
-          <StarRating1 />
-          <StarRating2 />
+          <StarRatings value={4.5} />
         </Stars>
         <div>4.37</div>
       </AvgScore>
@@ -250,18 +254,18 @@ const data = [
           <RatingFont>100.0%</RatingFont>
         </RatingsNumber3>
         <span>
-        <Progress style={{width:'112px', height:'6px'}} percent={100} showInfo={false} />
+          <Progress
+            style={{ width: "112px", height: "6px" }}
+            percent={100}
+            showInfo={false}
+          />
         </span>
       </Ratings>
     ),
     address: (
       <AvgScore>
         <Stars>
-          <StarRating1 />
-          <StarRating1 />
-          <StarRating1 />
-          <StarRating1 />
-          <StarRating1 />
+          <StarRatings value={5} />{" "}
         </Stars>
         <div>5.00</div>
       </AvgScore>
@@ -275,7 +279,6 @@ const data = [
     ),
   },
   {
-
     key: "4",
     name: (
       <FirstData>
