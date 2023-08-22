@@ -1,5 +1,5 @@
 import React from "react";
-import { Table, Tag } from "antd";
+import { Table } from "antd";
 import { HeaderDot } from "../imageSvgComps/headerDot";
 import { styled } from "styled-components";
 import { NameSort } from "../imageSvgComps/nameSort";
@@ -11,6 +11,7 @@ import { Percent3 } from "../imageSvgComps/percent3";
 import { StarRating1 } from "../imageSvgComps/starRating1";
 import { StarRating3 } from "../imageSvgComps/starRating3";
 import { StarRating2 } from "../imageSvgComps/starRating2";
+import {Progress} from "antd";
 import {
   TableHeading,
   Sorting,
@@ -33,6 +34,18 @@ import {
   UnderScore,
   DotDiv,
 } from "../styledComponents/styles";
+import { StarRatings } from "../imageSvgComps/starRate";
+import { ProgressBar } from "../imageSvgComps/progressBor";
+
+export const Line = styled.div`
+  width: 1px;
+  height: 14px;
+  background: #e4e7ea;
+`;
+export const Rows=styled.div`
+height: 87px;
+flex-shrink: 0;
+`;
 
 const columns = [
   {
@@ -126,6 +139,7 @@ const data = [
           </Svgs>
           <UserFileText>Recipients</UserFileText>
           <Numbers>100</Numbers>
+          <Line></Line>
           <Svgs>
             <FileSvg />
           </Svgs>
@@ -140,18 +154,14 @@ const data = [
           <RatingFont>32.7%</RatingFont>
         </RatingsNumber>
         <span>
-          <Percent1 />
+          <Progress style={{width:'110px', height:'6px'}} percent={30} showInfo={false} />
         </span>
       </Ratings>
     ),
     address: (
       <AvgScore>
         <Stars>
-          <StarRating1 />
-          <StarRating1 />
-          <StarRating1 />
-          <StarRating2 />
-          <StarRating3 />
+        <StarRatings value={3.5}/>
         </Stars>
         <div>3.37</div>
       </AvgScore>
@@ -175,6 +185,7 @@ const data = [
           </Svgs>
           <UserFileText>Recipients</UserFileText>
           <Numbers>100</Numbers>
+          <Line></Line>
           <Svgs>
             <FileSvg />
           </Svgs>
@@ -224,6 +235,7 @@ const data = [
           </Svgs>
           <UserFileText>Recipients</UserFileText>
           <Numbers>100</Numbers>
+          <Line></Line>
           <Svgs>
             <FileSvg />
           </Svgs>
@@ -263,6 +275,7 @@ const data = [
     ),
   },
   {
+
     key: "4",
     name: (
       <FirstData>
@@ -297,6 +310,7 @@ const data = [
           </Svgs>
           <UserFileText>Recipients</UserFileText>
           <Numbers>-</Numbers>
+          <Line></Line>
           <Svgs>
             <FileSvg />
           </Svgs>
