@@ -151,7 +151,6 @@ const data = [
         <span>
           <ProgressBar
           percent={32}
-            showInfo={false}
           />
         </span>
       </Ratings>
@@ -198,10 +197,8 @@ const data = [
           <RatingFont>61.2%</RatingFont>
         </RatingsNumber2>
         <span>
-          <Progress
-            style={{ width: "112px", height: "6px" }}
-            percent={61}
-            showInfo={false}
+        <ProgressBar
+          percent={61}
           />
         </span>
       </Ratings>
@@ -248,10 +245,8 @@ const data = [
           <RatingFont>100.0%</RatingFont>
         </RatingsNumber3>
         <span>
-          <Progress
-            style={{ width: "112px", height: "6px" }}
-            percent={100}
-            showInfo={false}
+        <ProgressBar
+          percent={100}
           />
         </span>
       </Ratings>
